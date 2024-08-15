@@ -39,18 +39,27 @@
 
  @font-face {
     font-family: 'LinguisticsPro';
-    src: url('../portfolio2/linguisticspro-webfont/linguisticspro-bolditalic-webfont.woff2') format('woff2'),
-         url('../portfolio2/linguisticspro-webfont/linguisticspro-bolditalic-webfont.woff') format('woff');
+    src: url('linguisticspro-webfontkit/linguisticspro-bold-webfont.woff2') format('woff2'),
+         url('linguisticspro-webfontkit/linguisticspro-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glamour';
+    src: url('glamour-webfontkit/glamour-webfont.woff2') format('woff2'),
+         url('glamour-webfontkit/glamour-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
     font-family: 'HelveticaNeue';
+    overflow-x: hidden;
 }
 
 main {
-    background-color: rgb(238, 238, 238);
+    background-color: #414042;
     padding: 0 24px 0 24px;
     display: flex;
     flex-direction: column;
@@ -61,8 +70,13 @@ main {
 
 /*NAV ------------------------------------------------------------------------------------*/
 
+.head-back {
+    background-color: aliceblue;
+    width: 100vw;
+}
+
 .head-contain {
-    background-color: #c5c5c5;
+    background-color: #414042;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +91,7 @@ header {
     padding: 20px 24px 10px 24px;
     background-color: #414042;
     color: #c5c5c5;
+    border-bottom: #2b2b2b;
 }
 
 .logo a {
@@ -103,6 +118,7 @@ nav {
     color: #c5c5c5;
     text-decoration: none;
     font-size: 1em;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -144,7 +160,7 @@ nav {
 .homecard {
     background-color: white;
     width: 100vw;
-    max-width: 1600px;
+    /* max-width: 1600px; */
     height: 80vh;
     padding: 24px;
     display: flex;
@@ -156,6 +172,19 @@ nav {
     width:auto;
     height: 50%;
     margin-top: 10vmin;
+    animation: fadeInSlideInUp 1s ;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+@keyframes fadeInSlideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .occupation {
@@ -168,7 +197,20 @@ nav {
     align-items: center;
     justify-content: center;
     margin-top: 4vmin;
+    animation: fadeInSlideIn 1s forwards;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 
+}
+
+@keyframes fadeInSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .scroll-cir {
@@ -182,13 +224,30 @@ nav {
     justify-content: center;
     margin-top: -100px;
     z-index: 2;
+    animation: fadeInSlideIn 1s forwards;
+    animation-delay: 1s;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Initial position for sliding effect */
+}
+
+.arrow {
+    position: absolute;
+    font-size: 4vmin;
+    color: #2b2b2b; 
+    font-size: 4vmin;
+    z-index: 2; 
 }
 
 .scroll-text {
-    width: 160px;
-    height: 160px;
-    animation: rotate 30s linear infinite;
-}
+    width: 90%;
+    height: 90%;
+    z-index: 1;
+    animation: rotate 45s linear infinite;
+} 
 
 @keyframes rotate {
     from {
@@ -207,7 +266,7 @@ nav {
     max-width: 1600px;
     height: auto;
     padding: 50px;
-    margin-top: -100px;
+    margin-top: -80px;
 }
 
 .intro {
@@ -218,7 +277,7 @@ nav {
 }
 
 .intro-line {
-    width: 75%;
+    width: 60%;
     border-bottom: 2px solid white;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -269,7 +328,6 @@ nav {
 /*FOOTER------------------------------------------------------------------------------------*/
 
 .footer {
-    background-color: #414042;
     color: #808285;
     display: flex;
     flex-direction: column;
@@ -282,4 +340,94 @@ nav {
     width: 24vmin;
     height: auto;
     margin-bottom: 2vmin;
+}
+
+.spacer {
+    width: 100vw;
+    height: 4vmin;
+}
+
+/*PORTFOLIO------------------------------------------------------------------------------------*/
+
+.port-contain {
+    background-color: #414042;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.port-title {
+    background-color: white;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vmin;
+    margin: 5vmin 0 10vmin 0;
+    font-family: 'LinguisticsPro';
+    font-weight: bold;
+    color: #414042;
+}
+
+.port-proj-contain {
+    width: 100vw;
+    max-width: 1600px;
+    padding: 24px;
+    animation: fadeInSlideIn 2s forwards;
+    transition: opacity 1s ease, transform 1s ease;
+    
+}
+
+@keyframes fadeInSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.port-row {
+    margin-bottom: 4vmin;
+    display: flex;
+    gap: 24px;
+}
+
+.port-proj {
+    background-color: white;
+    width: 50%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1vmin;
+}
+
+.port-proj .img {
+    width: 100%;
+    height: auto;
+    border-radius: 1vmin;
+}
+
+.port-proj-title {
+    margin-top: 1vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.port-proj-text {
+    font-size: 2.5vmin;
+    color: #2b2b2b;
+}
+
+.port-tag {
+    background-color: #2b2b2b;
+    color: white;
+    padding: .5vmin 1vmin .5vmin 1vmin;
+    border-radius: 50px;
 }

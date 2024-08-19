@@ -72,6 +72,11 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+ul {
+    list-style-position: inside; /* Aligns bullets with the text */
+}
+
     /* scroll-snap-type: y mandatory;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -568,3 +573,69 @@ nav {
     }
 }
 
+/*PROJECT1 + Header Pics------------------------------------------------------------------------------------*/
+
+.project-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px 0 24px;
+}
+
+.top-pic {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+
+}
+
+.port-txt {
+    width: 75%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vmin;
+    border: 1px solid #b5b5b5;
+    border-radius: 1vmin;
+    margin: 5vmin 0 5vmin 0;
+    color: #2b2b2b;
+    font-size: 16px;
+    line-height: 32px;
+
+}
+
+.ov-contain {
+    width: 100%;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    margin-top: 5vmin;
+}
+
+.ov {
+    width: 60%;
+}
+
+.key {
+    width: 20%;
+}
+
+.imgs-contain {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.one-img {
+    width: 100%;
+    height: auto;
+    margin: 24px 0 24px 0;
+}

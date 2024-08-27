@@ -683,6 +683,28 @@ nav {
     margin: 24px 0 24px 0;
 }
 
+@media (max-width: 800px) {
+    .port-txt {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px;  
+    }
+
+    .ov-contain {
+        flex-direction: column;
+    }
+
+    .ov {
+        width: 100%;
+    }
+
+    .key {
+        width: 100%;
+    }
+}
 
 /*PROJECT2------------------------------------------------------------------------------------*/
 
@@ -794,4 +816,40 @@ nav {
     height: auto;
 }
 
+@media (max-width: 800px) {
+    .page-text {
+        width: 100%;
+    }
+
+    .threecol-row {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .process-txt-contain {
+        justify-content: left;
+    }
+
+    .process-arrow {
+        display: none;
+    }
+
+    .twocol-text {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .left-col {
+        width: 100%;
+    }
+    
+    .right-col {
+        width: 100%;
+    }
+
+    .ca-row {
+        flex-direction: column;
+    }
+
+}
 

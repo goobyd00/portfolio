@@ -95,8 +95,10 @@ main::-webkit-scrollbar {
 /*NAV ------------------------------------------------------------------------------------*/
 
 .head-back {
+    position: fixed;
     background-color: aliceblue;
     width: 100vw;
+    z-index: 1000;
 }
 
 .head-contain {
@@ -583,6 +585,7 @@ nav {
     margin: 20px 0 20px 0;
     animation: fadeInSlideInUp 2s forwards;
     transition: opacity 1s ease, transform 1s ease;
+    line-height: 32px;
 }
 
 @media (max-width: 1000px) {
@@ -631,7 +634,7 @@ nav {
     width: 100%;
     max-width: 1600px;
     height: auto;
-    margin-top: 16px;
+    margin-top: 32px;
 
 }
 
@@ -729,6 +732,7 @@ nav {
     height: auto;
     color: #2b2b2b;
     margin-top: 12vmin;
+    line-height: 32px;
 }
 
 .threecol-row {
@@ -756,6 +760,7 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 1vmin;
 }
 
 .left-col {
@@ -853,3 +858,10 @@ nav {
 
 }
 
+/*PROJECT3------------------------------------------------------------------------------------*/
+
+.right-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 @font-face {
     font-family: 'HelveticaNeue';
     src: url('../portfolio2/helveticaneue-webfontkit/helveticaneueroman-webfont.woff') format('woff'),
@@ -65,7 +66,7 @@ body {
 
 main {
     background-color: #414042;
-    width: 100vw;
+    width: 100%;
     padding: 0 24px 0 24px;
     display: flex;
     flex-direction: column;
@@ -170,10 +171,14 @@ nav {
         flex-direction: column;
         width: 100%;
         text-align: center;
+        background-color: #414042; /* Ensure background color matches the header */
     }
 
     .nav-links.active {
         display: flex;
+        background-color: #414042; /* Ensure the background color matches or contrasts well */
+        z-index: 2000; /* Ensure it’s on top of other elements */
+        gap: 6px;
     }
 
     .hamburger {
@@ -290,6 +295,7 @@ nav {
 @media screen and (max-width: 600px) {
     .name {
         height: 40%;
+        margin-top: 20vmin;
     }
 
     .homecard {
@@ -415,6 +421,18 @@ nav {
     text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+ .copyright {
+    font-size: 12px;
+    margin-bottom: 16px;
+ }
+
+ .spacer {
+    height: 1vmin;
+}
+
+}
+
 /*PORTFOLIO------------------------------------------------------------------------------------*/
 
 .port-contain {
@@ -433,7 +451,7 @@ nav {
     max-width: 1600px;
     padding: 24px;
     margin-top: 5vmin;
-    animation: fadeInSlideIn 2s forwards;
+    animation: fadeInSlideIn 1s forwards;
     transition: opacity 1s ease, transform 1s ease;
     
 }
@@ -540,83 +558,77 @@ nav {
         color: #2b2b2b;
     }
 
+    .port-contain {
+        padding-top: 10vmin;
+    }
+
+    .empty {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+    .port-proj-title {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
 }
 
 
 /*ABOUT------------------------------------------------------------------------------------*/
 
 .about-back {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.about-contain {
-    width: auto;
-    max-width: 1600px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    gap: 50px;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    overflow: hidden;
 }
 
 .pic-contain {
-    width: 50%;
+    width: 100%;
+    max-width: 1600px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 32px;
     animation: fadeInSlideIn 2s forwards;
     transition: opacity 1s ease, transform 1s ease;
+    padding-top: 100px;
 }
 
 .pfp {
-    width: 100%;
+    width: 50%;
+    max-width: 700px;
+
     border-radius: 1vmin;
 }
 
 .text-contain {
-    width: 50%;
-    max-height: 80%;
+    width: 100%;
+    max-width: 1200px;
     font-size: clamp(16px, 2vmin, 20px);
-    margin: 20px 0 20px 0;
+    margin: 20px;
     animation: fadeInSlideInUp 2s forwards;
     transition: opacity 1s ease, transform 1s ease;
     line-height: 32px;
+    padding: 50px;
+    border: 1px solid #808285;
+    border-radius: 1vmin;
 }
 
-@media (max-width: 1000px) {
-    .about-contain {
-        flex-direction: column;
-        height: 130vh;
-        display: flex;
-        padding: 16px;
-        gap: 50px;
-        position: relative;
-    }
+
+@media (max-width: 600px) {
 
     .text-contain {
-        width: 90%;
+        padding: 24px;
     }
 }
 
-@media (max-width: 375px) {
-    .about-contain {
-        flex-direction: column;
-        height: 160vh;
-        display: flex;
-        padding: 16px;
-        gap: 50px;
-        position: relative;
-    }
-
-    .text-contain {
-        width: 90%;
-    }
-}
 
 /*PROJECT1 + Header Pics------------------------------------------------------------------------------------*/
 
@@ -686,7 +698,7 @@ nav {
     margin: 24px 0 24px 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
     .port-txt {
         width: 100%;
         height: auto;
@@ -706,6 +718,12 @@ nav {
 
     .key {
         width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .title-contain {
+        font-size: smaller;
     }
 }
 
@@ -842,6 +860,7 @@ nav {
     .twocol-text {
         flex-direction: column;
         gap: 40px;
+        padding: 2vmin;
     }
 
     .left-col {
@@ -864,4 +883,18 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*PROJECT4------------------------------------------------------------------------------------*/
+
+ol {
+    padding-left: 20px; /* Adjust the padding as needed */
+  }
+  
+  ol li {
+    margin-left: 0; /* Ensure the list item text aligns properly */
+  }
+
+.ugk li {
+    margin-bottom: 12px;
 }

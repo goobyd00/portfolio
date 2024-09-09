@@ -59,7 +59,7 @@ a {
 }
 
 body {
-    font-family: 'HelveticaNeue';
+    font-family: 'HelveticaNeue', Helvetica, sans-serif;
     overflow-x: hidden;
     min-height: 784px;
 }

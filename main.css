@@ -366,7 +366,7 @@ nav {
 }
 
 .title {
-    font-size: clamp(16px, 4vw, 42px);
+    font-size: clamp(16px, 3vw, 42px);
     color: #2b2b2b;
 }
 

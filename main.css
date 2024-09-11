@@ -193,7 +193,7 @@ nav {
     width: 100vw;
     /* max-width: 1600px; */
     height: 80vh;
-    min-height: 700px;
+    min-height: 650px;
     padding: 24px;
     display: flex;
     flex-direction: column;

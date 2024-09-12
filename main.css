@@ -321,6 +321,8 @@ nav {
     padding: 50px;
     margin-top: -80px;
     gap: 32px;
+    display: flex;
+    flex-direction: column;
 } 
 
 .intro {
@@ -334,22 +336,31 @@ nav {
     width: 60%;
     border-bottom: 2px solid white;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .here {
     color: white;
     font-size: clamp(12px, 2vmin, 24px);
-    margin-bottom: 30vmin;
+    margin-bottom: 10vmin;
 }
+
+.proj-center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .proj-box {
     background-color: white;
-    width: 100%;
+    width: 88%;
     height: auto;
     padding: 24px;
     border-radius: 1vmin;
-    margin: 20vmin 0 20vmin 0;
+    margin: 10vmin auto 10vmin auto;
 }
 
 .proj-box .img {
@@ -366,7 +377,7 @@ nav {
 }
 
 .title {
-    font-size: clamp(16px, 3vw, 42px);
+    font-size: clamp(16px, 2.5vw, 42px);
     color: #2b2b2b;
 }
 
@@ -643,10 +654,13 @@ nav {
 }
 
 .top-pic {
-    width: 100%;
+    width: 90%;
     max-width: 1600px;
     height: auto;
     margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -693,7 +707,7 @@ nav {
 }
 
 .one-img {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 24px 0 24px 0;
 }
@@ -814,7 +828,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 0 50px 0;
+    padding: 50px 26px 50px 26px;
 }
 
 .gif-text {

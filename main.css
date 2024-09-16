@@ -131,7 +131,7 @@ header {
 .logo a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 nav {
@@ -151,7 +151,7 @@ nav {
 .nav-links a {
     color: #c5c5c5;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -471,7 +471,7 @@ nav {
     background-color: white;
     width: 88%;
     height: auto;
-    padding: 24px;
+    padding: 16px;
     border-radius: 1vmin;
     margin: 10vmin auto 10vmin auto;
 }
@@ -617,7 +617,7 @@ nav {
 .port-proj {
     background-color: white;
     width: 50%;
-    padding: 24px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     border-radius: 1vmin;
@@ -767,6 +767,9 @@ nav {
     border-radius: 1vmin;
 }
 
+.big {
+    font-size: 24px;
+}
 
 @media (max-width: 600px) {
 

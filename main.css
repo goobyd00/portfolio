@@ -4,36 +4,42 @@
     box-sizing: border-box;
 }
 
-
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('helveticaneue-webfontkit/helveticaneuelight-webfont.woff') format('woff'),
+        url('helveticaneue-webfontkit/helveticaneuelight-webfont.woff2') format('woff2');
+    font-weight: light;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url('../portfolio2/helveticaneue-webfontkit/helveticaneueroman-webfont.woff') format('woff'),
-        url('../portfolio2/helveticaneue-webfontkit/helveticaneueroman-webfont.woff2') format('woff2');
+    src: url('helveticaneue-webfontkit/helveticaneueroman-webfont.woff') format('woff'),
+        url('helveticaneue-webfontkit/helveticaneueroman-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url('../portfolio2/helveticaneue-webfontkit/helveticaneueitalic-webfont.woff') format('woff'),
-        url('../portfolio2/helveticaneue-webfontkit/helveticaneueitalic-webfont.woff2') format('woff2');
+    src: url('helveticaneue-webfontkit/helveticaneueitalic-webfont.woff') format('woff'),
+        url('helveticaneue-webfontkit/helveticaneueitalic-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url('../portfolio2/helveticaneue-webfontkit/helveticaneuebold-webfont.woff') format('woff'),
-        url('../portfolio2/helveticaneue-webfontkit/helveticaneuebold-webfont.woff2') format('woff2');
+    src: url('helveticaneue-webfontkit/helveticaneuebold-webfont.woff') format('woff'),
+        url('helveticaneue-webfontkit/helveticaneuebold-webfont.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url('../portfolio2/helveticaneue-webfontkit/helveticaneuebolditalic-webfont.woff') format('woff'),
-        url('../portfolio2/helveticaneue-webfontkit/helveticaneuebolditalic-webfont.woff2') format('woff2');
+    src: url('helveticaneue-webfontkit/helveticaneuebolditalic-webfont.woff') format('woff'),
+        url('helveticaneue-webfontkit/helveticaneuebolditalic-webfont.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
 }
@@ -60,7 +66,7 @@ a {
 }
 
 body {
-    font-family: 'HelveticaNeue', Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     overflow-x: hidden;
     min-height: 784px;
 }
@@ -125,7 +131,7 @@ header {
 .logo a {
     color: white;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 16px;
 }
 
 nav {
@@ -145,7 +151,7 @@ nav {
 .nav-links a {
     color: #c5c5c5;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 16px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -190,15 +196,95 @@ nav {
 /*HOME ------------------------------------------------------------------------------------*/
 
 .homecard {
+    /*
     background-color: white;
     width: 100vw;
-    /* max-width: 1600px; */
     height: 80vh;
     min-height: 550px;
     padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    */
+
+    background-image: url('milad-fakurian-UiiHVEyxtyA-unsplash.jpg');
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 80vh;
+    min-height: 550px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.home-contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInSlideInUp 1s ;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.name-contain {
+    width: 80%;
+    max-width: 1400px;
+    min-width: 500px;
+    height: auto;
+    text-align: left;
+    font-size: clamp(20px, 10vmin, 150px);
+    padding: 24px;
+    color: #2b2b2b;
+    margin-bottom: 24px;
+    font-weight: light;
+}
+
+.g {
+    font-family: "baskerville-poster-pt", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 10vmin;
+}
+
+.small {
+    font-size: 4vmin;
+}
+
+.home-line {
+    width: 80%;
+    max-width: 1400px;
+    border-bottom: 1px solid #2b2b2b;
+    
+}
+
+.intro-contain {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+
+.hi {
+    width: 80%;
+    max-width: 1400px;
+    font-size: clamp(16px, 2vmin, 18px);
+    color: #2b2b2b;
+    line-height: 24px;
+}
+
+.graphic {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 4px 7px 3px 7px;
+    border-radius: 100px;
 }
 
 .name {
@@ -257,7 +343,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -100px;
+    margin-top: -80px;
     z-index: 2;
     animation: fadeInSlideIn 1s forwards;
     animation-delay: 1s;
@@ -281,7 +367,7 @@ nav {
     width: 90%;
     height: 90%;
     z-index: 1;
-    animation: rotate 45s linear infinite;
+    animation: rotate 60s linear infinite;
 } 
 
 @keyframes rotate {
@@ -300,8 +386,8 @@ nav {
     }
 
     .homecard {
-        height: 60vh;
-        min-height: 560px;
+        height: 40vh;
+        min-height: 450px;
     }
 
     .scroll-cir {
@@ -311,6 +397,19 @@ nav {
         max-height: 180px;
     }
 
+    .hi {
+        margin-bottom: 32px;
+    }
+
+    .name-contain {
+        margin-bottom: 12px;
+        width: 100%;
+        min-width: none;
+    }
+
+    .home-contain {
+        height: auto;
+    }
 }
 
 /*HOME PROJECTS------------------------------------------------------------------------------------*/
@@ -361,8 +460,12 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20vmin;
 }
 
+.proj-link {
+    display: inline-block;
+}
 
 .proj-box {
     background-color: white;
@@ -371,16 +474,7 @@ nav {
     padding: 24px;
     border-radius: 1vmin;
     margin: 10vmin auto 10vmin auto;
-    /* transition: transform 0.1s ease-in; */
 }
-
-
-/*
-.proj-box:hover {
-    background-color: #eaeaea;
-    transition: background-color 0.3s ease;
-}
-*/
 
 
 .proj-box .img {
@@ -404,8 +498,8 @@ nav {
 .proj-title .tag { 
     background-color: #2b2b2b;
     color: white;
-    font-size: clamp(16px, 2vw, 24px);
-    padding: .5vmin 1.5vmin .5vmin 1.5vmin;
+    font-size: clamp(16px, 1vw, 20px);
+    padding: .8vmin 1.5vmin .5vmin 1.5vmin;
     border-radius: 50px;
     display: flex;
     text-align: center;
@@ -428,6 +522,14 @@ nav {
         width: 100%;
     }
 
+    .home-line {
+        width: 100%;
+    }
+
+    .hi {
+        width: 100%;
+    }
+
 }
 
 
@@ -446,6 +548,7 @@ nav {
     width: 24vmin;
     height: auto;
     margin-bottom: 2vmin;
+    display: none;
 }
 
 .spacer {
@@ -693,8 +796,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
 
 .port-txt {
     width: 75%;
@@ -743,6 +846,86 @@ nav {
     height: auto;
     margin: 24px 0 24px 0;
 }
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  /* 
+.lightbox-content {
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+
+.slides {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .close {
+    position: absolute;
+    top: 50px;
+    right: 136px;
+    color: white;
+    font-size: 35px;
+    font-weight: regular;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 3000;
+  }
+  
+
+  .close:hover {
+    color: #bbb;
+  }
+  
+ 
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+  }
+  
+.prev {
+    left: 0;
+  }
+  
+.next {
+    right: 0;
+  }
+  
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+*/
 
 @media (max-width: 1100px) {
     .port-txt {

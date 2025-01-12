@@ -207,8 +207,8 @@ nav {
     align-items: center;
     */
 
-    background-image: url('milad-fakurian-UiiHVEyxtyA-unsplash.jpg');
-    background-color: white;
+    background-image: url('test.png');
+    background-color: rgb(209, 232, 242);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -258,7 +258,7 @@ nav {
 }
 
 .home-line {
-    width: 80%;
+    width: 76%;
     max-width: 1400px;
     border-bottom: 1px solid #2b2b2b;
     
@@ -283,7 +283,7 @@ nav {
 .graphic {
     background-color: #2b2b2b;
     color: white;
-    padding: 4px 7px 3px 7px;
+    padding: 4px 8px 3px 8px;
     border-radius: 100px;
 }
 
@@ -338,7 +338,7 @@ nav {
     height: 20vmin;
     max-width: 180px;
     max-height: 180px;
-    border: 1px solid #2b2b2b;
+    border: 2px dashed #414042;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -347,7 +347,7 @@ nav {
     z-index: 2;
     animation: fadeInSlideIn 1s forwards;
     animation-delay: 1s;
-    transition: opacity 0.5s ease, transform 0.5s ease; 
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .hidden {
@@ -357,18 +357,38 @@ nav {
 
 .arrow {
     position: absolute;
-    font-size: 4vmin;
-    color: #2b2b2b; 
-    font-size: 4vmin;
-    z-index: 2; 
+    font-size: 5vmin;
+    color: #4c4c4c; 
+    font-size: 5vmin;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+    animation: bounce 0.8s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
 }
 
 
 .scroll-text {
-    width: 90%;
-    height: 90%;
+    width: 85%;
+    height: 85%;
     z-index: 1;
-    animation: rotate 76s linear infinite;
+   /* animation: rotate 76s linear infinite;*/
 }
 
 
@@ -623,7 +643,7 @@ nav {
     display: flex;
     flex-direction: column;
     border-radius: 1vmin;
-    border: 1px solid #b5b5b5;
+    border: 1px solid #d1d1d1;
 }
 
 /*

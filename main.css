@@ -208,7 +208,7 @@ nav {
     align-items: center;
     */
 
-    background-image: url('test.png');
+    background-image: url('milad-fakurian-UiiHVEyxtyA-unsplash.jpg');
     background-color: rgb(209, 232, 242);
     background-size: cover;
     background-position: center;
@@ -1170,4 +1170,32 @@ ol {
 
 .ugk li {
     margin-bottom: 12px;
+}
+
+/*TEST GALLERY -----------------------------------------------------------------------------------*/
+.gallery {
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.gallery img:hover {
+    opacity: 90%;
+    transform: scale(1.01);
+}
+
+.galleryrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
 }

@@ -651,13 +651,11 @@ nav {
     border-radius: 1vmin;
     border: 1px solid #d1d1d1;
     transition: background-color 0.1s ease-in;
-    transition: 0.2s;
 }
 
 
 .port-proj:hover {
      background-color: rgb(246, 246, 246);
-     transform: scale(1.01)
  }
 
 

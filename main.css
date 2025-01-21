@@ -1148,6 +1148,10 @@ nav {
         flex-direction: column;
     }
 
+    .galleryrow {
+        flex-direction: column;
+    }
+
 }
 
 /*PROJECT3------------------------------------------------------------------------------------*/

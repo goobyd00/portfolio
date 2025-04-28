@@ -1112,6 +1112,10 @@ nav {
     height: auto;
 }
 
+.swop-pics {
+   margin-top: 5vmin;
+}
+
 @media (max-width: 800px) {
     .page-text {
         width: 100%;
@@ -1203,3 +1207,24 @@ ol {
     width: 100%;
     height: auto;
 }
+
+/*COLLAPSE TEST-----------------------------------------------------------------------------------------
+summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+summary::before {
+    content: "▶";
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+*/
